@@ -254,4 +254,3 @@ def dobro(numero):
 num = float(input('Digite: '))
 print(dobro(num))
 '''
-
