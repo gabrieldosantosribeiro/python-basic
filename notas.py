@@ -253,4 +253,33 @@ def dobro(numero):
 
 num = float(input('Digite: '))
 print(dobro(num))
+
+
+# cria uma classe
+class NomeDaClasse:
+    pass
+    
+# herança - a subclasse herda atributos e métodos da superclasse
+class Animal:
+    def falar(self):
+        print('som de animal')
+
+class Cachorro(Animal): # Cachorro herda de Animal
+    def falar(self): # sobrescreve o método da superclasse
+        print('au au')
+
+# polimorfismo - métodos com o mesmo nome, mas comportamentos diferente
+class Gato(Animal):
+    def falar(self):
+        print('miau')
+
+# super() - chama métodos ou o construtor da superclasse
+class Veiculo:
+    def __init__(self, modelo):
+        self.modelo = modelo
+
+class Carro(Veiculo):
+    def __init__(self, modelo, cor):
+        super().__init__(modelo) # chama o construtor de Veiculo
+        self.cor = cor
 '''
