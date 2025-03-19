@@ -282,4 +282,6 @@ class Carro(Veiculo):
     def __init__(self, modelo, cor):
         super().__init__(modelo) # chama o construtor de Veiculo
         self.cor = cor
+
+# any() - recebe um conjunto e se algum elemento for verdadeiro retorna True se não retora False
 '''
